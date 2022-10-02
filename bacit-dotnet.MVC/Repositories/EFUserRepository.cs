@@ -30,6 +30,11 @@ namespace bacit_dotnet.MVC.Repositories
             return dataContext.Users.ToList();
         }
 
+        public void Edit(UserEntity user)
+        {
+
+        }
+
         public void Save(UserEntity user)
         {
             var existingUser = GetUserByEmail(user.Email);

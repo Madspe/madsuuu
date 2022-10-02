@@ -36,6 +36,10 @@ namespace bacit_dotnet.MVC.Repositories
             }
         }
 
+        public void Edit(UserEntity user)
+        {
+            
+        }
         public List<UserEntity> GetUsers()
         {
             using (var connection = sqlConnector.GetDbConnection() as MySqlConnection)
